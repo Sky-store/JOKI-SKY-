@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   <script src="https://cdn.tailwindcss.com"></script>
+       <title>List Rank</title>
+</head>
+<body>
+<!-- 1 -->
+<section class="bg-gray-100">
+  <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+      <div class="lg:col-span-2 lg:py-12">
+        <p class="max-w-xl text-lg">
+          <!-- Text Isi -->
+        </p>
+
+        <div class="mt-8">
+          <h1 href="index.html" class="text-2xl font-bold text-black-500">Silahkan Isi List</h1>
+
+          <address class="mt-2 not-italic">Joki Aman Dan Terpercaya!!!</address>
+        </div>
+      </div>
+
+      <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+        <form action="#" class="space-y-4" onsubmit="sendMessageToWhatsapp()">
+          <div>
+            <label class="sr-only" for="nama">Nama</label>
+            <input
+              class="w-full rounded-lg border-gray-200 p-3 text-sm"
+              placeholder="Nama"
+              type="text"
+              id="nama"
+            />
+          </div>
+
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <label class="sr-only" for="pesan">Rank Anda Sekarang</label>
+              <input
+                class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                placeholder="Rank Anda Sekarang"
+                type="text"
+                id="pesan"
+              />
+            </div> 
+
+            <div>
+              <label class="sr-only" for="nama">Joki Sampi Rank Berapa</label>
+              <input
+                class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                placeholder="Joki Sampi Rank Berapa"
+                type="text"
+                id="rank"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label class="sr-only" for="nama">Pengerjaan</label>
+
+            <input
+              class="w-full rounded-lg border-gray-200 p-3 text-sm"
+              placeholder="Pengerjaan"
+              type="text"
+              id="waktu"
+            ></input>
+          </div>
+
+          <div class="mt-4">
+            <button
+              type="submit"
+              class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
+           
+			>
+              Kirim 
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+       function sendMessageToWhatsapp() {
+	   const urlToWhatsapp = `https://wa.me/6289632709911?text=Halo, nama saya ${nama.value}, rank saya ${pesan.value},joki sampe rank ${rank.value}, Pengerjaan ${waktu.value}`;
+	   window.open(urlToWhatsapp, "_blank");
+	  }
+	   
+  </script>
+</section>
+<!-- end 1 -->
+</body>
+</html>
